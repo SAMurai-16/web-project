@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <title>Sign up</title>
+ <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+ }
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: aqua;
+ }
+ .wrap{
+    background-color: rgb(65, 67, 122);
+    width: 400px;
+    height: 430px;
+    color: azure;
+    padding: 30px;
+ }
+ .wrap h1{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+ }
+ .usern{
+    width: 100%;
+    height: 50px;
+    margin-bottom:30px ;
+ }
+ .usern input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border: 2px solid rgb(24, 102, 181);
+    border-radius: 30px;
+    padding-left: 10px;
+ }
+ .usern input::placeholder{
+    color: azure;
+ }
+ .usern i{
+    position: absolute;
+    right: 170px;
+    transform: translateY(100%);
+
+ }
+.sub{
+    width:60%;
+  margin-left: 75px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ </style>
+</head>
+<body>
+    <div class="wrap">
+    <div><h1>Sign Up</h1></div>
+    <form action="/user/" method="post">
+    <div class="usern"><input type="email"placeholder="Email",required name="Email" > <i class='bx bxl-gmail' ></i></div>
+   <div class="usern"><input type="text" placeholder="Username",required name="UserName" > <i class='bx bxs-user'></i></div>
+   <div class="usern"><input type="password" placeholder="Password",required name="Password" > <i class='bx bxs-lock-alt'></i></div> 
+   
+   <button class="sub" type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
